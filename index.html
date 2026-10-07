@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Dental Journey — Dr. Areeba Batool</title>
+  <meta name="description" content="A scroll-told story of Dr. Areeba Batool's path into dentistry — BDS 2025–2029, ANDC Lahore. One rotation, one reflection at a time." />
+  <meta name="author" content="Dr. Areeba Batool" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#F5F1EA" />
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="My Dental Journey — Dr. Areeba Batool" />
+  <meta property="og:description" content="The story of how a first-year BDS student becomes a clinician — told one rotation, one reflection at a time." />
+
+  <style>
+    /* Critical pre-paint state: the preloader owns the first frame.
+       Each published build is born in ONE theme (build-time env); the
+       attribute below is set before first paint — no flash, ever. */
+    html { background: #F5F1EA; }
+    html[data-site-theme="black"] { background: #0D0D10; }
+    html[data-site-theme="pink"]  { background: #F7E8EC; }
+    html[data-site-theme="gray"]  { background: #E5E6E8; }
+    html.is-loading body { overflow: hidden; }
+  </style>
+  <!-- A scroll-told story starts at the beginning: kill scroll
+       restoration before the browser can queue one (module JS
+       parses too late to win that race on phones). -->
+  <script>try { history.scrollRestoration = 'manual' } catch (e) {}</script>
+  <!-- Theme before first paint (no flash): the placeholder is
+       replaced at build time with this build's fixed theme
+       ("" → white/ivory). Full registry lives in src/theme.js. -->
+  <script>
+    try {
+      var __t = "pink" || 'ivory'
+      if (__t !== 'ivory') {
+        var __map = {
+          black: { bg: '#0D0D10', scheme: 'dark'  },
+          pink:  { bg: '#F7E8EC', scheme: 'light' },
+          gray:  { bg: '#E5E6E8', scheme: 'light' }
+        }
+        var __cfg = __map[__t]
+        if (__cfg) {
+          document.documentElement.dataset.siteTheme = __t
+          var __m = document.querySelector('meta[name="color-scheme"]')
+          if (__m) __m.content = __cfg.scheme
+          var __mc = document.querySelector('meta[name="theme-color"]')
+          if (__mc) __mc.content = __cfg.bg
+        }
+      }
+    } catch (e) {}
+  </script>
+  <script type="module" crossorigin src="./assets/index-C89xIQLa.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-ClfaDDmW.css">
+</head>
+<body>
+
+  <!-- ══════════ FIXED LAYERS ══════════ -->
+  <div class="bg-field" aria-hidden="true"></div>
+  <canvas id="webgl" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress-line" aria-hidden="true"><span></span></div>
+
+  <header class="site-head" data-theme-header>
+    <a class="site-head__mark" href="#hero" data-scroll-to data-cursor="top" aria-label="Back to top">
+      <img src="./images/logo.png" alt="My Dental Journey — tooth logo" width="44" height="44" />
+    </a>
+    <div class="site-head__right">
+      <p class="site-head__chapter mono-label">
+        <span class="site-head__count">CH. 01</span>
+        <span class="site-head__sep" aria-hidden="true">—</span>
+        <span class="site-head__name">ORIGIN</span>
+      </p>
+    </div>
+  </header>
+
+  <!-- Custom cursor (desktop pointers only) -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+  </div>
+
+  <!-- ══════════ PRELOADER ══════════ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <p class="preloader__name mono-label">Dr. Areeba Batool — BDS · 2025–2029</p>
+      <p class="preloader__count"><span id="preloader-count">00</span></p>
+      <p class="preloader__hint mono-label">Preparing the journey</p>
+    </div>
+    <div class="preloader__line"><span id="preloader-bar"></span></div>
+    <div class="preloader__curtain preloader__curtain--a"></div>
+    <div class="preloader__curtain preloader__curtain--b"></div>
+  </div>
+
+  <main id="main">
+
+    <!-- ══════════ 00 · HERO ══════════ -->
+    <section class="hero" id="hero" data-chapter="00 · CLOSE-UP" aria-label="Introduction">
+      <div class="hero__frame">
+        <p class="hero__who mono-label" data-reveal>Dr. Areeba Batool</p>
+        <p class="hero__cred mono-label" data-reveal>BDS · 2025 – 2029 · ANDC, Lahore</p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hero__line-inner" data-split="chars">My Dental</span></span>
+          <span class="hero__line hero__line--indent"><span class="hero__line-inner" data-split="chars">Journey</span></span>
+        </h1>
+        <p class="hero__descriptor" data-reveal>
+          The story of how a first-year dental student becomes a clinician —
+          told one rotation, one reflection at a time.
+        </p>
+        <div class="hero__scrollcue" aria-hidden="true">
+          <span class="mono-label">Scroll — slowly</span>
+          <span class="hero__scrollcue-line"><span></span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 01 · ORIGIN ══════════ -->
+    <!--
+      TODO (content): The personal "why dentistry" moment is not in the source
+      e-portfolio. The three paragraphs below are Dr. Batool's real words from
+      her "About Me". Swap in her own origin anecdote here when she shares it —
+      e.g. the first time she held a mouth mirror, or who inspired her.
+    -->
+    <section class="origin" id="origin" data-chapter="01 · ORIGIN" data-bg="#F5F1EA" aria-label="How it started">
+      <div class="origin__pin">
+        <p class="origin__ghost" aria-hidden="true">01</p>
+        <div class="origin__content">
+          <p class="chapter-label mono-label" data-reveal>01 / Origin — How it started</p>
+          <div class="origin__text" data-scrub-words>
+            <p>Hi — I&rsquo;m Dr.&nbsp;Areeba Batool, a BDS student documenting her growth across clinical rotations, reflections, and the small lessons that shape a future clinician.</p>
+            <p>I have a strong interest in developing my knowledge, practical skills, and professional attitude in dentistry.</p>
+            <p>My aim is to connect theoretical knowledge with practical experience — to learn from each clinical encounter, identify areas for improvement, and gradually grow into a competent, ethical, and compassionate dental professional.</p>
+          </div>
+          <dl class="origin__data">
+            <div><dt class="mono-label">Name</dt><dd>Dr. Areeba Batool</dd></div>
+            <div><dt class="mono-label">Roll No.</dt><dd>SU91-BDSMM-F25-006</dd></div>
+            <div><dt class="mono-label">Department</dt><dd>Dentistry</dd></div>
+            <div><dt class="mono-label">Session</dt><dd>2025 – 2029</dd></div>
+          </dl>
+        </div>
+        <!-- Portrait of the author — circular frame, right side.
+             TODO (content): swap in a higher-resolution headshot when available. -->
+        <figure class="origin__portrait">
+          <span class="origin__portrait-ring" aria-hidden="true"></span>
+          <div class="origin__portrait-frame">
+            <img src="./images/areeba-headshot.jpg" alt="Portrait of Dr. Areeba Batool" width="400" height="589" />
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ══════════ 02 · EDUCATION ══════════ -->
+    <section class="education" id="education" data-chapter="02 · EDUCATION" data-bg="#ECE6DA" aria-label="The training years">
+      <div class="education__pin">
+        <div class="education__head">
+          <p class="chapter-label mono-label">02 / Education — The training years</p>
+        </div>
+        <div class="education__track">
+
+          <article class="edu-panel edu-panel--intro">
+            <p class="edu-panel__year" aria-hidden="true">04</p>
+            <h2 class="edu-panel__title">Schools,<br />then the<br />chair.</h2>
+            <p class="edu-panel__body">Every clinician was once a student with a timetable. Mine ran through three doors before the clinic — each one teaching a different kind of discipline.</p>
+            <p class="edu-panel__tag mono-label">Matric → Intermediate → BDS</p>
+          </article>
+
+          <article class="edu-panel">
+            <figure class="edu-panel__media" data-clip-reveal>
+              <!-- TODO (content): replace with a real photograph from this period. -->
+              <img src="./images/ph-school.jpg" alt="School desk with notebooks and pencils in morning light — the matriculation years" loading="lazy" />
+            </figure>
+            <p class="edu-panel__year" aria-hidden="true">01</p>
+            <h3 class="edu-panel__title">Matriculation</h3>
+            <p class="edu-panel__place">The Spirit School — Lahore</p>
+            <p class="edu-panel__body">Where the foundations were poured, and the habit of showing up — every single day — quietly began.</p>
+          </article>
+
+          <article class="edu-panel">
+            <figure class="edu-panel__media" data-clip-reveal>
+              <!-- TODO (content): replace with a real photograph from this period. -->
+              <img src="./images/ph-college.jpg" alt="Library desk with textbooks and handwritten study notes — the intermediate years" loading="lazy" />
+            </figure>
+            <p class="edu-panel__year" aria-hidden="true">02</p>
+            <h3 class="edu-panel__title">Intermediate</h3>
+            <p class="edu-panel__place">KIPS College — Lahore</p>
+            <p class="edu-panel__body">The stepping stone between school and the dental chair — long nights, short holidays, one direction.</p>
+          </article>
+
+          <article class="edu-panel">
+            <figure class="edu-panel__media" data-clip-reveal>
+              <!-- TODO (content): replace with a real photograph of the college. -->
+              <img src="./images/ph-chair.jpg" alt="A calm dental clinic room in morning light — first year of the BDS" loading="lazy" />
+            </figure>
+            <p class="edu-panel__year" aria-hidden="true">03</p>
+            <h3 class="edu-panel__title">Bachelor of Dental Surgery</h3>
+            <p class="edu-panel__place">ANDC · Lahore</p>
+            <p class="edu-panel__body">Year one of four, in progress. Roll No. SU91-BDSMM-F25-006 — the number that follows every reflection I write.</p>
+            <p class="edu-panel__tag mono-label">2025 – 2029 · In progress</p>
+          </article>
+
+          <article class="edu-panel edu-panel--wide">
+            <p class="edu-panel__year" aria-hidden="true">04</p>
+            <h3 class="edu-panel__title">Year one — foundations</h3>
+            <p class="edu-panel__body">The vocabulary of the mouth, learned one subject at a time.</p>
+            <ol class="edu-panel__subjects">
+              <li><span>01</span>Dental Anatomy</li>
+              <li><span>02</span>Oral Histology</li>
+              <li><span>03</span>Biochemistry</li>
+              <li><span>04</span>Physiology</li>
+              <li><span>05</span>Dental Materials</li>
+              <li><span>06</span>Community Dentistry <em>(intro)</em></li>
+            </ol>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 03 · CLINICAL ══════════ -->
+    <!-- The full Gibbs reflections for each rotation live in chapter 04. -->
+    <section class="clinical" id="clinical" data-chapter="03 · CLINICAL" data-bg="#F5F1EA" aria-label="Behind the chair">
+      <div class="clinical__head">
+        <p class="chapter-label mono-label" data-reveal>03 / Clinical — Behind the chair</p>
+        <h2 class="clinical__title" data-reveal>First-year rotations:<br /><em>watching closely, asking questions,</em> learning how a clinic breathes.</h2>
+      </div>
+
+      <div class="clinical__split">
+        <div class="clinical__visual" aria-hidden="true">
+          <figure class="clinical__frame is-active" data-rotation-img="0">
+            <img src="./images/ph-arch.jpg" alt="" loading="lazy" />
+          </figure>
+          <figure class="clinical__frame" data-rotation-img="1">
+            <img src="./images/ph-models.jpg" alt="" loading="lazy" />
+          </figure>
+          <figure class="clinical__frame" data-rotation-img="2">
+            <img src="./images/ph-radiograph.jpg" alt="" loading="lazy" />
+          </figure>
+          <figure class="clinical__frame" data-rotation-img="3">
+            <img src="./images/ph-instruments.jpg" alt="" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="clinical__text">
+          <p class="clinical__intro" data-reveal>
+            &ldquo;During these rotations I had the opportunity to observe and participate in
+            various learning activities across four departments. The exposure helped me connect
+            theoretical concepts with real clinical situations — and improved my communication,
+            observation, teamwork, and professional conduct.&rdquo;
+          </p>
+
+          <article class="rotation" data-rotation="0">
+            <p class="rotation__no" aria-hidden="true">1</p>
+            <div>
+              <h3 class="rotation__name">Community Dentistry</h3>
+              <p class="rotation__body">Oral health begins outside the clinic — in schools, homes and everyday habits. On a school outreach session I assisted with screening children for visible caries, demonstrated brushing technique on a model, and handed out oral hygiene kits under the eye of a senior public-health officer. It widened the frame: prevention at scale needs a clear message, a repeatable protocol, and trust built in the first thirty seconds.</p>
+            </div>
+          </article>
+
+          <article class="rotation" data-rotation="1">
+            <p class="rotation__no" aria-hidden="true">2</p>
+            <div>
+              <h3 class="rotation__name">Communication Skills</h3>
+              <p class="rotation__body">A clinician&rsquo;s first instrument is a conversation. We role-played patient interviews in pairs — delivering a multi-visit treatment plan to an anxious &ldquo;patient&rdquo; — and practised the SPIKES framework for breaking difficult news, with peer feedback on tone, pacing and non-verbal cues. I learned to open a conversation, hold one, and close one with care; and to let silence do some of the work.</p>
+            </div>
+          </article>
+
+          <article class="rotation" data-rotation="2">
+            <p class="rotation__no" aria-hidden="true">3</p>
+            <div>
+              <h3 class="rotation__name">Radiology</h3>
+              <p class="rotation__body">Learning to read the stories teeth tell in shadow and light. I observed intraoral periapical (IOPA) views, a panoramic radiograph (OPG) and a cone-beam CT for implant planning — watching how positioning, exposure and patient cooperation make or break image quality. By the end of the week my pattern recognition had grown enough to point out obvious caries and trace the lamina dura around a few teeth; what is there, what is missing, what is beginning.</p>
+            </div>
+          </article>
+
+          <article class="rotation" data-rotation="3">
+            <p class="rotation__no" aria-hidden="true">4</p>
+            <div>
+              <h3 class="rotation__name">Oral Medicine &amp; Diagnostics</h3>
+              <p class="rotation__body">Where careful questions become careful answers. I observed history-taking and examination of patients presenting with oral ulcers, white patches and suspected premalignant lesions, and was walked through a head-and-neck examination sequence and a structured history template — onset, duration, aggravating factors, systemic context. The discipline of looking before touching, and of building a differential that doesn&rsquo;t anchor on the first plausible answer.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="marquee" data-marquee aria-hidden="true">
+        <div class="marquee__track">
+          <span class="marquee__seq">Observation <i>✳</i> Communication <i>✳</i> Teamwork <i>✳</i> Professional conduct <i>✳</i>&nbsp;</span>
+          <span class="marquee__seq">Observation <i>✳</i> Communication <i>✳</i> Teamwork <i>✳</i> Professional conduct <i>✳</i>&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ 04 · LESSONS ══════════ -->
+    <section class="lessons" id="lessons" data-chapter="04 · LESSONS" data-bg="#ECE6DA" aria-label="What it taught me">
+      <p class="chapter-label mono-label" data-reveal>04 / Lessons — What it taught me</p>
+
+      <blockquote class="pull pull--left" data-split-lines>
+        <p>&ldquo;A clinician is not made in a day — every patient, every reflection, every small correction counts.&rdquo;</p>
+        <cite class="mono-label">— Dr. Areeba Batool</cite>
+      </blockquote>
+
+      <div class="lessons__stats" data-stats>
+        <div class="stat">
+          <p class="stat__number" data-count="4" data-pad="2">00</p>
+          <p class="mono-label">Rotations completed</p>
+        </div>
+        <div class="stat">
+          <p class="stat__number" data-count="6" data-pad="2">00</p>
+          <p class="mono-label">Stages of reflection</p>
+        </div>
+        <div class="stat">
+          <p class="stat__number" data-count="1" data-pad="2">00</p>
+          <p class="mono-label">Year, of four</p>
+        </div>
+      </div>
+
+      <blockquote class="pull pull--right" data-split-lines>
+        <p>Connect theory with practice. Learn from every encounter. Grow — one correction at a time.</p>
+        <cite class="mono-label">— The working aim</cite>
+      </blockquote>
+
+      <div class="gibbs">
+        <p class="chapter-label mono-label" data-reveal>The method — Gibbs&rsquo; reflective cycle</p>
+        <p class="gibbs__intro" data-reveal>
+          Every rotation in this portfolio closes with a Gibbs reflection — six steps that turn an experience into a lesson.
+          What follows is each rotation, reflected in full, exactly as written in the e-portfolio.
+        </p>
+        <ol class="gibbs__list">
+          <li data-reveal><span class="mono-label">01</span>Description</li>
+          <li data-reveal><span class="mono-label">02</span>Feelings</li>
+          <li data-reveal><span class="mono-label">03</span>Evaluation</li>
+          <li data-reveal><span class="mono-label">04</span>Analysis</li>
+          <li data-reveal><span class="mono-label">05</span>Conclusion</li>
+          <li data-reveal><span class="mono-label">06</span>Action plan</li>
+        </ol>
+      </div>
+
+      <!-- — the reflections themselves, rotation by rotation — -->
+      <div class="reflections">
+        <p class="chapter-label mono-label" data-reveal>The reflections — in my own words</p>
+
+        <!-- 01 · Community Dentistry -->
+        <article class="reflection" aria-label="Gibbs reflection — Community Dentistry">
+          <header class="reflection__head" data-reveal>
+            <p class="reflection__index mono-label">Reflection 01</p>
+            <h3 class="reflection__name">Community Dentistry</h3>
+          </header>
+
+          <!-- field diptych — two photographs from the outreach weeks -->
+          <div class="reflection__media reflection__media--field">
+            <figure class="media-frame" data-media-reveal data-drift="-18">
+              <img src="./images/community-01.jpg" alt="In full PPE during the community dentistry outreach session" width="720" height="960" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="media-frame" data-media-reveal data-drift="18">
+              <img src="./images/community-02.jpg" alt="At the clinic desk in a white lab coat during the community dentistry rotation" width="720" height="960" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+
+          <dl class="reflection__stages">
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">01</span>Description</dt>
+              <dd>I joined a community dentistry outreach session organized for a local school. My role was to assist with screening children for visible caries, demonstrate brushing technique on a model, and hand out oral hygiene kits. The session was supervised by a senior dental public health officer, who guided us through the patient flow and the recording of basic findings on the field form.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">02</span>Feelings</dt>
+              <dd>I was initially unsure how to keep a row of waiting children engaged, and I worried that my screening notes might be inconsistent. As the morning went on, I grew more confident because the workflow became predictable and the supervisor gave brief, encouraging feedback after each group.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">03</span>Evaluation</dt>
+              <dd>The positive side was real-world interaction: I saw how social context shapes oral health behaviour, not just clinical findings. The negative side was that I struggled to keep my screening time consistent — I spent longer with cooperative children and rushed through the more reluctant ones.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">04</span>Analysis</dt>
+              <dd>Community dentistry complements chair-side work by treating populations instead of individual patients. I realised that prevention at scale depends on three things: a clear message, a short and repeatable screening protocol, and trust built in the first thirty seconds of contact. My time management issue reflected a protocol that I had internalised rather than written down.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">05</span>Conclusion</dt>
+              <dd>If I had a short, printed screening checklist in hand, I could keep the pace consistent without sacrificing rapport. More importantly, I understood that community work is not a softer form of dentistry — it requires deliberate preparation, because there is no unit-chair to fall back on.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">06</span>Action plan</dt>
+              <dd>I will prepare a one-page screening checklist before the next outreach, time each child for a maximum of two minutes, and volunteer for the post-session briefing so I can present findings and receive structured feedback from the supervisor.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- 02 · Communication Skills -->
+        <article class="reflection" aria-label="Gibbs reflection — Communication Skills">
+          <header class="reflection__head" data-reveal>
+            <p class="reflection__index mono-label">Reflection 02</p>
+            <h3 class="reflection__name">Communication Skills</h3>
+          </header>
+
+          <!-- dialogue plate — one illustration, set off-centre like a book plate -->
+          <div class="reflection__media reflection__media--plate">
+            <figure class="media-plate" data-media-reveal data-drift="-14">
+              <img src="./images/communication.jpg" alt="A smiling tooth between two speech bubbles — the dialogue at the heart of the communication skills rotation" width="1536" height="1024" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+
+          <dl class="reflection__stages">
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">01</span>Description</dt>
+              <dd>In the communication skills rotation we role-played patient interviews in pairs, with one student playing a patient who had just been told they needed a multi-visit treatment plan. We practiced a structured framework (SPIKES) for breaking news, took simulated case histories, and received peer feedback on tone, pacing, and non-verbal cues.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">02</span>Feelings</dt>
+              <dd>I was nervous before the first role-play because I worried about sounding rehearsed or cold. Once I let the patient speak without interrupting, I felt calmer and more present, and I noticed that the silence after a piece of bad news was the hardest part to tolerate.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">03</span>Evaluation</dt>
+              <dd>What worked well was active listening — leaning forward, mirroring the patient&rsquo;s posture, and summarising what they said before responding. What did not work was my tendency to fill silences too quickly, which undercut the patient&rsquo;s chance to process the information.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">04</span>Analysis</dt>
+              <dd>Communication in dentistry is not soft skill padding; it is the bridge between diagnosis and consent. A patient who feels heard will share symptoms more accurately, accept the proposed plan, and return for follow-up. The framework helped because it gave me permission to pause — the silence is part of the treatment, not a gap in it.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">05</span>Conclusion</dt>
+              <dd>I should slow down. The next time I deliver news I will allow at least five seconds of silence after the key sentence, and check understanding by asking the patient to restate the plan in their own words rather than asking only if they have questions.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">06</span>Action plan</dt>
+              <dd>I will record one role-play per week and review it against a simple checklist: did I introduce myself, listen first, allow silence, summarise, and check understanding? I will also ask a senior to observe a real case and give written feedback.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- 03 · Radiology -->
+        <article class="reflection" aria-label="Gibbs reflection — Radiology">
+          <header class="reflection__head" data-reveal>
+            <p class="reflection__index mono-label">Reflection 03</p>
+            <h3 class="reflection__name">Radiology</h3>
+          </header>
+
+          <!-- the viewing box — films hung on a dark light-box band -->
+          <div class="reflection__media reflection__media--films">
+            <div class="film-strip" data-media-reveal>
+              <figure class="film-strip__frame">
+                <img src="./images/radiology-01.jpg" alt="A lateral cephalogram radiograph held up to the light" width="876" height="1280" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="film-strip__frame">
+                <img src="./images/radiology-02.jpg" alt="The panoramic X-ray machine in the radiology suite" width="960" height="1280" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="film-strip__frame">
+                <img src="./images/radiology-03.jpg" alt="Panoramic radiographs held up for reading" width="1280" height="1259" loading="lazy" decoding="async" />
+              </figure>
+            </div>
+          </div>
+
+          <dl class="reflection__stages">
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">01</span>Description</dt>
+              <dd>During the radiology rotation I observed the acquisition of intraoral periapical (IOPA) views, a panoramic radiograph (OPG), and one cone-beam CT (CBCT) for implant planning. I learned how positioning, exposure parameters, and patient cooperation affect image quality, and I followed along as the supervisor interpreted each image.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">02</span>Feelings</dt>
+              <dd>The physics of beam angle and exposure felt overwhelming at first, and I was frustrated that I could not yet read anatomical landmarks at the same speed as the supervisor. By the end of the week my pattern recognition had improved enough that I could point out the obvious caries and the lamina dura around a few teeth.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">03</span>Evaluation</dt>
+              <dd>I performed well on positioning for IOPA views and on identifying anatomical landmarks such as the mental foramen and the maxillary sinus floor. I was weaker at picking up early inter-proximal caries and at distinguishing early peri-apical pathosis from normal variations.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">04</span>Analysis</dt>
+              <dd>A radiograph is an adjunct, not a verdict — it must always be correlated with the patient&rsquo;s history and clinical findings, because a shadow on the image is meaningless without a symptom to attach it to. Reading images quickly is a product of seeing many images, not a product of natural ability, so the path forward is volume and feedback.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">05</span>Conclusion</dt>
+              <dd>If I had access to a structured atlas and a daily habit of looking at a handful of normal variants, I would stop second-guessing every lamina dura and start reserving attention for genuinely suspicious findings. My weakness is therefore a study habit gap, not a knowledge ceiling.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">06</span>Action plan</dt>
+              <dd>I will spend fifteen minutes a day with a recognised oral radiology atlas, present one interesting case per week in the journal club, and ask the supervisor to point out three normal variants on every shift so I can build a baseline before focusing on pathology.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- 04 · Oral Medicine & Diagnostics -->
+        <article class="reflection" aria-label="Gibbs reflection — Oral Medicine and Diagnostics">
+          <header class="reflection__head" data-reveal>
+            <p class="reflection__index mono-label">Reflection 04</p>
+            <h3 class="reflection__name">Oral Medicine &amp; Diagnostics</h3>
+          </header>
+
+          <!-- desk records — two sheets of paperwork, laid out and overlapping -->
+          <div class="reflection__media reflection__media--desk">
+            <figure class="media-sheet media-sheet--notes" data-media-reveal>
+              <img src="./images/diagnostics-01.jpg" alt="Handwritten history-taking notes from the diagnostics rotation" width="1280" height="1114" loading="lazy" decoding="async" />
+            </figure>
+            <figure class="media-sheet media-sheet--form" data-media-reveal>
+              <img src="./images/diagnostics-02.jpg" alt="A completed OPD form from the oral medicine and diagnostics department" width="960" height="1280" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+
+          <dl class="reflection__stages">
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">01</span>Description</dt>
+              <dd>In the oral medicine and diagnostics rotation I observed history-taking and examination of patients presenting with oral ulcers, white patches, and suspected premalignant lesions. The senior registrar walked me through a head-and-neck examination sequence and a structured history template that captures onset, duration, aggravating factors, and systemic context.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">02</span>Feelings</dt>
+              <dd>Some of the patient stories were emotionally heavy, especially when a lesion had been ignored for months. I had to consciously maintain composure during the examination, and I felt the gap between my textbook list of differentials and the registrar&rsquo;s short, focused one.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">03</span>Evaluation</dt>
+              <dd>My systematic approach to examination was a strength — I did not skip steps, and the registrar commented that the order of the steps was correct. My weakness was in generating a complete differential; I would anchor on the first plausible diagnosis and forget to include the rarer but more serious possibilities.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">04</span>Analysis</dt>
+              <dd>A methodical head-to-toe examination catches what a quick look misses, but a methodical examination is only useful if paired with an equally methodical differential. The registrar&rsquo;s short list was not the result of skipping, but of years of pattern weighting; my long, disorganised list was a sign of inexperience, not of being thorough.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">05</span>Conclusion</dt>
+              <dd>I need a written differential checklist by symptom — for example, every white patch should trigger a fixed sequence (leukoplakia, lichen planus, candidiasis, frictional keratosis, malignancy) rather than a free recall. Otherwise I will keep anchoring on whichever diagnosis I read most recently.</dd>
+            </div>
+            <div class="stage" data-reveal>
+              <dt><span class="mono-label">06</span>Action plan</dt>
+              <dd>I will maintain a small clinical diary of cases seen, with one differential checklist per symptom category. I will also ask the supervisor to mark the cases where my differential missed an important possibility, so I can review those symptom categories at the end of each week.</dd>
+            </div>
+          </dl>
+        </article>
+
+        <p class="reflections__sign mono-label" data-reveal>Regards — Dr. Areeba Batool · BDS · 2025 – 2029</p>
+      </div>
+    </section>
+
+    <!-- ══════════ 05 · CLOSING ══════════ -->
+    <section class="closing" id="closing" data-chapter="05 · WHAT'S NEXT" data-bg="#0B0D0E" data-theme-flip="dark" aria-label="What's next">
+      <div class="closing__inner">
+        <p class="chapter-label mono-label" data-reveal>05 / What&rsquo;s next</p>
+        <h2 class="closing__title">
+          <span class="closing__line"><span data-split="chars">To be</span></span>
+          <span class="closing__line"><span data-split="chars"><em>continued.</em></span></span>
+        </h2>
+        <p class="closing__sub" data-reveal>
+          Year one of four. The reflections keep arriving as the sessions do —
+          <em>status: in progress</em>, exactly as it should be.
+        </p>
+
+        <div class="closing__contact" data-reveal>
+          <p class="closing__ask">Write to me —</p>
+          <a class="btn-magnetic" href="mailto:su91-bdsmm-f25-006@superior.edu.pk" data-cursor="send">
+            <span class="btn-magnetic__fill" aria-hidden="true"></span>
+            <span class="btn-magnetic__text">Send an email</span>
+          </a>
+          <!--
+            TODO (content): add Instagram / LinkedIn links here once available.
+            <a class="closing__link mono-label" href="#">Instagram</a>
+            <a class="closing__link mono-label" href="#">LinkedIn</a>
+          -->
+        </div>
+      </div>
+
+      <footer class="site-foot">
+        <p class="mono-label">© 2026 Dr. Areeba Batool — a reflective e-portfolio created for academic purposes.</p>
+        <p class="mono-label">SU91-BDSMM-F25-006 · ANDC · Lahore</p>
+        <button class="site-foot__top mono-label" type="button" data-scroll-to data-scroll-target="#hero">Back to top ↑</button>
+      </footer>
+    </section>
+
+  </main>
+
+  <noscript>
+    <style>
+      .preloader, .cursor, .grain { display: none !important; }
+      html.is-loading body { overflow: auto; }
+      [data-reveal], [data-scrub-words] p, .hero__line-inner { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+
+</body>
+</html>
